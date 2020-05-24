@@ -13,7 +13,7 @@
     <div class="header-link-area">
       <ul>
         <li
-          :class="{'selected-header-button': isHome}"
+          :class="{'selected-header-button': isHome, 'blue-hover': hoverColor[0], 'orange-hover': !hoverColor[0]}"
           class="header-bar-button home-button"
         >
           <router-link
@@ -25,7 +25,7 @@
           </router-link>
         </li>
         <li
-          :class="{'selected-header-button': isIntroduction}"
+          :class="{'selected-header-button': isIntroduction, 'blue-hover': hoverColor[1], 'orange-hover': !hoverColor[1]}"
           class="header-bar-button introduction-button">
           <router-link
             :to="{name: 'Introduction'}"
@@ -36,7 +36,7 @@
           </router-link>
         </li>
         <li
-          :class="{'selected-header-button': isLinks}"
+          :class="{'selected-header-button': isLinks, 'blue-hover': hoverColor[2], 'orange-hover': !hoverColor[2]}"
           class="header-bar-button link-button">
           <router-link
             :to="{name: 'Links'}"
@@ -47,7 +47,7 @@
           </router-link>
         </li>
         <li
-          :class="{'selected-header-button': isContact}"
+          :class="{'selected-header-button': isContact, 'blue-hover': hoverColor[3], 'orange-hover': !hoverColor[3]}"
           class="header-bar-button contact-button">
           <router-link
             :to="{name: 'Contact'}"
@@ -65,6 +65,11 @@
 <script>
 export default {
   name: 'Header',
+  data () {
+    return {
+      hoverColor: []
+    }
+  },
   computed: {
     isHome () {
       return this.$route.name === 'Home'
@@ -77,6 +82,11 @@ export default {
     },
     isContact () {
       return this.$route.name === 'Contact'
+    }
+  },
+  created () {
+    for (let i = 0; i < 4; i++) {
+      this.hoverColor.push(Math.random() < 0.5)
     }
   }
 }
@@ -133,8 +143,12 @@ export default {
   transition: background-color .5s linear;
 }
 
-.header-bar-button:hover {
-  background: #eceeef;
+.blue-hover:hover {
+  background: #B3C1E0;
+}
+
+.orange-hover:hover {
+  background: #e3925b;
 }
 
 .header-bar-button:hover a {
