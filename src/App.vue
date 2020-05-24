@@ -26,6 +26,6 @@ export default {
 <style>
 body {
   margin: 0;
-  font-family: りいポップ角;
+  font-family: akazukin;
 }
 </style>

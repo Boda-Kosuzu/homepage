@@ -5,7 +5,7 @@
         小鈴の犬小屋
       </div>
       <img
-        src="../assets/kosuzu.png"
+        src="../assets/kosuzu2.png"
         alt="小鈴さん"
         class="kosuzu-pic"
       >
@@ -91,6 +91,20 @@ export default {
   box-sizing: border-box;
 }
 
+.page-title {
+  text-shadow:
+    #e8efff 2px 0px 0px, #e8efff -2px 0px 0px,
+    #e8efff 0px -2px 0px, #e8efff 0px 2px 0px,
+    #e8efff 2px 2px 0px, #e8efff -2px 2px 0px,
+    #e8efff 2px -2px 0px, #e8efff -2px -2px 0px,
+    #e8efff 1px 2px 0px, #e8efff -1px 2px 0px,
+    #e8efff 1px -2px 0px, #e8efff -1px -2px 0px,
+    #e8efff 2px 1px 0px, #e8efff -2px 1px 0px,
+    #e8efff 2px -1px 0px, #e8efff -2px -1px 0px,
+    #e8efff 1px 1px 0px, #e8efff -1px 1px 0px,
+    #e8efff 1px -1px 0px, #e8efff -1px -1px 0px;
+}
+
 .header-image-background {
   background: #eceeef;
   display: flex;
@@ -153,7 +167,8 @@ export default {
 }
 
 .kosuzu-pic {
-  width: 650px;
+  width: 450px;
   height: 100%;
+  margin-right: 100px;
 }
 </style>

@@ -63,7 +63,6 @@ export default {
   font-size: 3rem;
   width: 30%;
   padding-top: 3rem;
-  padding-left: 3rem;
   margin: 0;
   left: 0;
   position: absolute;

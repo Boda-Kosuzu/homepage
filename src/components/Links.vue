@@ -70,7 +70,7 @@ export default {
           title: 'Svelteで作ってみたシリーズ',
           description: `フロントエンドの軽量コンパイラ、
 Svelteを利用していろいろ作ってみたシリーズ。
-マインスイーパー作成は初めて触ったのでグダグダしてます。`,
+マインスイーパー作成は初めてだったのでグダグダしてます。`,
           id: 'PLFUWmvZ8X_UxwCc9ed159mzWYWMginGxe'
         },
         {
@@ -79,6 +79,12 @@ Svelteを利用していろいろ作ってみたシリーズ。
 このHPを作った配信シリーズ。
 だいたい無言でひたすら作ってます。`,
           id: 'PLFUWmvZ8X_UyNIKK88XicJMdEhSQ17XtY'
+        },
+        {
+          title: 'n日後にFirebaseとNuxt.jsを完全に理解するいぬ',
+          description: `Webアプリでよく使われる、FirebaseとNuxt.jsをお勉強した配信です。
+12日後に完全に理解することになりました。`,
+          id: 'PLFUWmvZ8X_UzbDLuaUPJD11hEcPA0NclA'
         }
       ],
       tweetId: 'border_s_bell',

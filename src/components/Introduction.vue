@@ -52,7 +52,6 @@ export default {
         {
           title: '今後何したい？',
           description: `いろんな人を巻き込んで面白いWebApp作りたい！
-          というか、今一つ作ってるから完成をお楽しみに！
           それ以外だと、R言語の勉強したり、モデリングも勉強したい！！！`
         }
       ]
@@ -73,6 +72,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 50px 10vw;
 }
 
 .introduction-body::before {
@@ -80,7 +80,7 @@ export default {
   background: #374047;
   position: absolute;
   width: 100%;
-  height: 109%;
+  height: 100%;
   transform: rotate(-45deg);
 }
 </style>
